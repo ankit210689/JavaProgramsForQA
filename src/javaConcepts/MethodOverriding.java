@@ -1,16 +1,21 @@
-package Programs;
+package javaConcepts;
+
+//Q121. Why overriding is used?--->If we want to change a method implementation of the main class in derived class, method overriding is used.
+//We can override any method in the derived class, providing method in the base class is not marked as final.
+//While overriding , we had to make sure that name, arguments and return type of the overriding method remain same in both base and derived class.
+//Also, the access modifier of the method should be same in both base and derived class.
 
 public class MethodOverriding {
 	
 	static class Animal{
-		public void eat() {
+		public void eat() {//Access modifier is public, Return type is void with no arguments
 			//Animal Code
 			System.out.println("Animal is eating");
 		}
 	}
 	
 	static class Dog extends Animal{
-		public void eat() {
+		public void eat() {//Access modifier is public, Return type is void with no arguments
 			//Modified animal code for Dog
 			System.out.println("Boy is eating");
 		}

@@ -8,7 +8,7 @@ import java.util.HashSet;
 
 
 
-public class Qu73_DuplicateNumberBetween1ToN {
+public class Qu73_CommonElementsBetween1ToN {
 	
 	
 

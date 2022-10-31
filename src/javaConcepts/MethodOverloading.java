@@ -1,4 +1,8 @@
-package Programs;
+package javaConcepts;
+
+//Q123. Why overloading is used?-->When we want to implement methods that have some basic functionality but accepts different arguments, overloading is used.
+//When we implement overloaded method, argument must differ, return type can differ (but it's not mandatory)
+
 
 public class MethodOverloading {
 	
@@ -7,18 +11,23 @@ public class MethodOverloading {
 		return;
 	}
 	
-	public static int sum(int x, int y) {
+	public static String sum (String x, String y) {//Same method name, Different kind and number of arguments. Return type kept the same.
 		return x+y;
 	}
 	
-	public static int sum (int x,int y, int z) {
+	public static int sum(int x, int y) {//Same method name, Different kind and number of arguments. Return type kept the same.
+		return x+y;
+	}
+	
+	public static int sum (int x,int y, int z) {//Same method name, Different kind and number of arguments. Return type kept the same.
 		return x+y+z;
 	}
 	
 	public static void main (String[] args) {
 		//Depending upon the number of parameters given compiler will call the method to provide the output
-		System.out.println(sum(2,3));//Method "sum" with 2 input parameters are called
-		System.out.println(sum(2,3,4));//Method "sum" with 3 input parameters are called
+		System.out.println(sum(2,3));//Method "sum" with 2 input parameters is called
+		System.out.println(sum(2,3,4));//Method "sum" with 3 input parameters is called
+		System.out.println(sum("Ankit","Pandey"));//Method "sum" with 2 string input parameters is called
 	}
 
 }
