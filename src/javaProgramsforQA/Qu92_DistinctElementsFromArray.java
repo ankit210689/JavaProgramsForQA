@@ -10,7 +10,7 @@ public class Qu92_DistinctElementsFromArray {
 		
 		for (int i=0;i<a.length;i++) {
 			boolean notDistinct=false;//boolean flag used to signal distinct values
-			for (int j=i+1;j<a.length;j++) {
+			for (int j=0;j<i;j++) {
 				if (a[i]==a[j]) {
 					notDistinct=true;//for non-distinct element set the flag to true and break the loop
 					break;
